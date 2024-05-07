@@ -7,7 +7,8 @@ RUN apt-get update && \
 WORKDIR /app
 COPY . /app
 
-RUN pip3 install -r requirements.txt
+# RUN pip3 install -r requirements.txt
+RUN pip3 install --verbose -r requirements.txt
 
 EXPOSE 8000
 
