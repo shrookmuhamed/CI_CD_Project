@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 WORKDIR /app
 COPY . /app
-RUN pip3 install -r requirements.txt
+RUN pip install -r requirements.txt
 RUN python3.6 manage.py makemigrations
 RUN python3.6 manage.py migrate
 
