@@ -1,6 +1,4 @@
-FROM ubuntu:latest
-RUN apt-get update && \
-    apt-get install -y python3.6 python3-pip
+FROM python:latest
 WORKDIR /app
 COPY . /app
 RUN pip3 install -vvv -r requirements.txt
